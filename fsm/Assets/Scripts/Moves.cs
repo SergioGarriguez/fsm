@@ -14,6 +14,13 @@ public class Moves : MonoBehaviour
     GameObject[] hidingSpots;
     NavMeshAgent agent;
 
+    public bool found;
+
+    //public void found()
+    //{
+    //
+    //}
+
     void Start()
     {
         agent = this.GetComponent<NavMeshAgent>();
@@ -84,6 +91,8 @@ public class Moves : MonoBehaviour
 
         Seek(targetWorld);
     }
+
+    
 
     public void Hide()
     {
